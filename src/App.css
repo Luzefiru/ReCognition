@@ -11,6 +11,8 @@
 :root {
   --black: #010001;
   --black-variant: #191819;
+  --black-variant-selected: #262727;
+  --black-background: #121212;
   --white: #fefeff;
   --grey: #a7a6a6;
   --green: #1ed661;
@@ -21,8 +23,4 @@ html,
 #root {
   height: 100%;
   font-family: 'Noto Sans', sans-serif;
-}
-
-main {
-  height: calc(100% - 64px - 32px); /* max height - header - footer */
 }

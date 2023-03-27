@@ -1,0 +1,4 @@
+main {
+  background-color: var(--black-background);
+  height: calc(100% - 64px - 32px); /* max height - header - footer */
+}
