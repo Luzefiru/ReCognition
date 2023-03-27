@@ -4,7 +4,9 @@ import './Header.css';
 const Header = () => {
   return (
     <header>
-      <span className="header__title">Albumify</span>
+      <span className="header__title">
+        Re<span class="header__title__accent">Cognition</span>
+      </span>
     </header>
   );
 };
