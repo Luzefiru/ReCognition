@@ -18,4 +18,5 @@
 .MemoryCard__album-art {
   height: 11rem;
   width: 11rem;
+  object-fit: cover;
 }
