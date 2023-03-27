@@ -5,6 +5,17 @@ const Main = () => {
   return (
     <main>
       <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
+      <MemoryCard />
     </main>
   );
 };

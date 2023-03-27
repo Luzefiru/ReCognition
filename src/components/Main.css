@@ -1,4 +1,10 @@
 main {
   background-color: var(--black-background);
   height: calc(100% - 64px - 32px); /* max height - header - footer */
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template: repeat(2, 13rem) / repeat(4, 13rem);
+  align-content: space-around;
+  justify-content: center;
 }

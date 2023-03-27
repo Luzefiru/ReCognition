@@ -4,8 +4,8 @@
   justify-content: center;
   background-color: var(--black-variant);
   /* album-art size + 2rem border allowance */
-  width: calc(12rem + 2rem);
-  height: calc(12rem + 2rem);
+  width: calc(11rem + 2rem);
+  height: calc(11rem + 2rem);
   border-radius: 8px;
   transition: all ease-in 100ms;
 }
@@ -16,6 +16,6 @@
 }
 
 .MemoryCard__album-art {
-  height: 12rem;
-  width: 12rem;
+  height: 11rem;
+  width: 11rem;
 }
