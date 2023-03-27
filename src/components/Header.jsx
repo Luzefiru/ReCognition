@@ -1,7 +1,12 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
-  return <div>Hello World!</div>;
+  return (
+    <header>
+      <span className="header__title">Albumify</span>
+    </header>
+  );
 };
 
 export default Header;
