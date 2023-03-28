@@ -3,6 +3,7 @@ header {
   padding: 0 32px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--black);
 }
 
@@ -22,4 +23,12 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header__score {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: var(--white);
+  font-weight: 600;
 }

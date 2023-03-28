@@ -4,10 +4,12 @@ import Footer from './components/layouts/Footer';
 import Main from './components/Main';
 
 function App() {
+  const [score, setScore] = useState(0);
+
   return (
     <>
-      <Header />
-      <Main />
+      <Header score={score} />
+      <Main setScore={setScore} />
       <Footer />
     </>
   );
