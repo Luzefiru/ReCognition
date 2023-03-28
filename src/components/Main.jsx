@@ -10,14 +10,16 @@ const Main = (props) => {
     const handleMemoryCardClick = (src) => {
       const imageID = src.split('photo-')[1].split('-')[0];
 
-      console.log(selectedCards, imageID, selectedCards.indexOf(imageID));
-
       if (selectedCards.indexOf(imageID) !== -1) {
-        alert('You picked a duplicate, score & selectedCards array resets!');
+        // console.log(
+        //   'You picked a duplicate, score & selectedCards array resets!'
+        // );
         props.setScore(0);
         setSelectedCards([]);
       } else {
-        console.log('Not a duplicate!');
+        // console.log(
+        //   'Not a duplicate, score increments & add image ID to selectedCards!'
+        // );
         props.setScore((prevScore) => prevScore + 1);
         setSelectedCards([...selectedCards, imageID]);
       }
