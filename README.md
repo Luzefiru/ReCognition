@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# ReCognition
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A memory card game built with React utilizing Functional Component Hooks & Unsplash API.
 
-## Available Scripts
+# Reflection
 
-In the project directory, you can run:
+Working with Unsplash's API proved to be quite difficult for development as it only permits 50 requests per hour. However, their images are top-notch and add a lot of spice to my project.
 
-### `npm start`
+In the future, I hope to learn back-end development so that I can hide my `.env` variables for my API keys.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I also learned about how different browser vendors offer different CSS properties. `-webkit-` is used by Chromium & Safari, but I still need to research whether my styles apply in Mozilla Firefox's [Gecko](https://developer.mozilla.org/en-US/docs/Glossary/Gecko) engine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Favorite Code Snippet
 
-### `npm test`
+This was the cleanest text gradient I have created thus far:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```CSS
+.header__title__accent {
+  background-image: linear-gradient(
+    245deg,
+    hsl(240deg 100% 64%) 0%,
+    hsl(340deg 100% 57%) 64%,
+    hsl(55deg 100% 50%) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+```
 
-### `npm run build`
+# Output
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### [Visit the Website Here](https://luzefiru.github.io/ReCognition/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./requirements/website-screenshot.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Reference
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+These were the requirements in The Odin Project's [Project: Memory Card](https://www.theodinproject.com/lessons/node-path-javascript-memory-card) site in order to serve guidelines for application functionality. Aesthetic & design choices relied solely on the developer.

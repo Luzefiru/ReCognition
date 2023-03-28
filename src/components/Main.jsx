@@ -2,7 +2,7 @@ import './Main.css';
 import MemoryCard from './ui/MemoryCard';
 import { useState, useEffect } from 'react';
 
-const Main = () => {
+const Main = (props) => {
   const [memoryCards, setMemoryCards] = useState([]);
   const [selectedCards, setSelectedCards] = useState([]);
 
