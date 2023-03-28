@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 function App() {
   const [score, setScore] = useState(0);
+
   return (
     <>
       <Header score={score} />

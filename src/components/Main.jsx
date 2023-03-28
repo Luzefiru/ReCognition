@@ -18,8 +18,8 @@ const Main = (props) => {
         setSelectedCards([]);
       } else {
         console.log('Not a duplicate!');
-        setSelectedCards([...selectedCards, imageID]);
         props.setScore((prevScore) => prevScore + 1);
+        setSelectedCards([...selectedCards, imageID]);
       }
     };
 
