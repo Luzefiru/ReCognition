@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <span className="header__title">
-        Re<span class="header__title__accent">Cognition</span>
+        Re<span className="header__title__accent">Cognition</span>
       </span>
     </header>
   );
