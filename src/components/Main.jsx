@@ -2,10 +2,9 @@ import './Main.css';
 import MemoryCard from './ui/MemoryCard';
 import { useState, useEffect } from 'react';
 
-const Main = () => {
+const Main = (props) => {
   const [memoryCards, setMemoryCards] = useState([]);
   const [selectedCards, setSelectedCards] = useState([]);
-  const [score, setScore] = useState(0);
 
   useEffect(() => {
     const handleMemoryCardClick = (src) => {
@@ -15,15 +14,13 @@ const Main = () => {
 
       if (selectedCards.indexOf(imageID) !== -1) {
         alert('You picked a duplicate, score & selectedCards array resets!');
-        setScore(0);
+        props.setScore(0);
         setSelectedCards([]);
       } else {
         console.log('Not a duplicate!');
         setSelectedCards([...selectedCards, imageID]);
-        setScore((prevScore) => prevScore + 1);
+        props.setScore((prevScore) => prevScore + 1);
       }
-
-      console.log('Your score:', score);
     };
 
     const queryTerm = 'neon';
@@ -38,7 +35,7 @@ const Main = () => {
       .then((data) => {
         setMemoryCards(initializeMemoryCards(data, handleMemoryCardClick));
       });
-  }, [selectedCards, score]);
+  }, [selectedCards, props]);
 
   return <main>{memoryCards}</main>;
 };
